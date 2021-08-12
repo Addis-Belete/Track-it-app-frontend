@@ -1,14 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import AddMeasurement from './AddMeasurment';
 import App from './App';
 import Login from './Login';
+import Progress from './Progress';
+import NavBar from './NavBar';
+import Panel from '../container/Panel';
 
 const Routes = () => (
   <BrowserRouter>
+    <NavBar />
     <Switch>
-      <Route path="/" component={Login} />
-      <Route path="/home" component={App} />
-
+      <Route exact path="/" component={Login} />
+      <Route exact path="/home" component={App} />
+      <Route exact path="progress/:id" component={Progress} />
+      <Route exact path="/addMeasurment" component={AddMeasurement} />
+      <Route exact path="/track" component={Panel} />
     </Switch>
 
   </BrowserRouter>

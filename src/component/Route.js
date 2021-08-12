@@ -1,11 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import App from './App';
+import Login from './Login';
 
-const Route = () => (
-  <p>
-    Responsible for links like add measurment
-    track, your progress and more
+const Routes = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" component={Login} />
+      <Route path="/home" component={App} />
 
-  </p>
+    </Switch>
+
+  </BrowserRouter>
 );
 
-export default Route;
+export default Routes;

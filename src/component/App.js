@@ -1,5 +1,6 @@
 import '../style/App.css';
-import AddMeasurement from './AddMeasurment';
+
+import Navigation from './footer';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <p>Metahulish Final capstone</p>
       </header>
-      <AddMeasurement />
+      <Navigation />
     </div>
   );
 }

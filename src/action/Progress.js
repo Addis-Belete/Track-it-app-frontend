@@ -1,8 +1,9 @@
+import axios from 'axios';
 import { FETCH_PROGRESS_REQUEST, FETCH_PROGRESS_SUCCESS, FETCH_PROGRESS_FAILURE } from '../store/type';
 
-const fetchProgresRequest = (progress) => ({
+const fetchProgresRequest = () => ({
   type: FETCH_PROGRESS_REQUEST,
-  payload: progress,
+
 });
 
 const fetchProgresSuccess = (progress) => ({
@@ -10,10 +11,25 @@ const fetchProgresSuccess = (progress) => ({
   payload: progress,
 });
 
-const fetchProgressFailure = (progress) => ({
+const fetchProgressFailure = (error) => ({
   type: FETCH_PROGRESS_FAILURE,
-  payload: progress,
+  payload: error,
 
 });
 
-export { fetchProgressFailure, fetchProgresSuccess, fetchProgresRequest };
+const fetchProgress = (id) => (dispatch) => {
+  dispatch(fetchProgresRequest);
+  axios.get(`https://intense-spire-98414.herokuapp.com/measurments/${id}/results`)
+    .then((response) => {
+      const progress = response.data;
+      dispatch(fetchProgresSuccess(progress));
+    })
+    .catch((error) => {
+      const errorMsg = error.message;
+      dispatch(fetchProgressFailure(errorMsg));
+    });
+};
+
+export {
+  fetchProgressFailure, fetchProgresSuccess, fetchProgresRequest, fetchProgress,
+};

@@ -6,6 +6,7 @@ import Login from './Login';
 import Progress from './Progress';
 import NavBar from './NavBar';
 import Panel from '../container/Panel';
+import AllProgress from './AllProgress';
 
 const Routes = () => (
   <BrowserRouter>
@@ -16,6 +17,7 @@ const Routes = () => (
       <Route exact path="progress/:id" component={Progress} />
       <Route exact path="/addMeasurment" component={AddMeasurement} />
       <Route exact path="/track" component={Panel} />
+      <Route exact path="/allProgress" component={AllProgress} />
     </Switch>
 
   </BrowserRouter>

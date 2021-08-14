@@ -13,6 +13,7 @@ const addProgress = (id, result) => (dispatch) => {
     .then((response) => {
       const progress = response.data;
       dispatch(addProgres(progress));
+      console.log(progress);
     })
     .catch((error) => {
       const errorMsg = error.message;

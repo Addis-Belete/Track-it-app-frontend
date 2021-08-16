@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 
-import Form from 'react-bootstrap/Form';
-import { Button } from 'react-bootstrap/lib/InputGroup';
+import Form from 'react-bootsrap/From';
+import Button from 'bootstrap-button';
 
 const Login = () => {
   const [name, setName] = useState('');

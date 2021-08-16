@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import axios from 'axios';
 import { FETCH_PROGRESS_REQUEST, FETCH_PROGRESS_SUCCESS, FETCH_PROGRESS_FAILURE } from '../store/type';
 
@@ -23,6 +24,7 @@ const fetchProgress = (id) => (dispatch) => {
     .then((response) => {
       const progress = response.data;
       dispatch(fetchProgresSuccess(progress));
+      console.log(progress);
     })
     .catch((error) => {
       const errorMsg = error.message;

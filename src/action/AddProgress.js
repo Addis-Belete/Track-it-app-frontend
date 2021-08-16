@@ -9,12 +9,11 @@ export const addProgres = (progObj) => ({
 
 });
 
-const addProgress = (id, result) => (dispatch) => {
-  axios.post(`https://intense-spire-98414.herokuapp.com/measurments/${id}/results?result=${result}`)
+const addProgress = (prog) => (dispatch) => {
+  axios.post(`https://intense-spire-98414.herokuapp.com/measurments/${prog.id}/results?result=${prog.result}`)
     .then((response) => {
       const progress = response.data;
       dispatch(addProgres(progress));
-      console.log(progress);
     })
     .catch((error) => {
       const errorMsg = error.message;

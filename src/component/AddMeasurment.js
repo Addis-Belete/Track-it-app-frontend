@@ -4,30 +4,42 @@ import { useDispatch } from 'react-redux';
 import addProgress from '../action/AddProgress';
 
 const AddMeasurement = () => {
-  const [id, setId] = useState(null);
-  const [result, setResult] = useState(null);
+  const [prog, setProg] = useState({
+    id: '',
+    result: '',
+
+  });
   const dispatch = useDispatch();
 
-  const createPost = (results) => {
-    useEffect(() => (
-      dispatch(addProgress(results))
+  const createPost = () => {
+    dispatch(addProgress(prog));
+    setProg({
+      id: '',
+      result: '',
 
-    ));
+    });
   };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setProg({
+      ...prog,
+      [name]: value,
 
+    });
+  };
   const category = ['Left bicep', 'Right bicep', 'Waist', 'Hips', 'Left thigh', 'Right thigh'];
-
+  const { id, result } = prog;
   return (
     <div>
       <form>
-        <select name="cat" id="cat" onChange={(e) => setId(e.target.value)}>
+        <select name="id" id="cat" onChange={handleChange} value={id}>
           {category.map((cat, id) => (
             <option value={id + 1} key={cat}>{cat}</option>
           ))}
 
         </select>
-        <input type="number" step="0.1" min="0" max="100" onChange={(e) => setResult(e.target.value)} value={result} />
-        <button type="button" onClick={createPost(result)}>Add Measurment</button>
+        <input name="result" type="number" step="0.1" min="0" max="100" onChange={handleChange} value={result} />
+        <button type="submit" onClick={createPost}>Add Measurment</button>
 
       </form>
     </div>

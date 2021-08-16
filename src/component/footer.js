@@ -4,16 +4,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPlusSquare, faChartLine, faChartPie, faSignOutAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import footer from '../style/footer.module.css';
 
 const Navigation = (path) => {
   if (path === '/') {
     return '';
   }
   return (
-    <div className="footer">
+    <div className={footer.footer}>
 
       <Link to="/addMeasurment">
-        <div>
+        <div className="add">
           <FontAwesomeIcon icon={faPlusSquare} />
           <p>Add Measure</p>
         </div>

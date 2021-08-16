@@ -21,6 +21,7 @@ const Routes = () => (
       <Route exact path="/allProgress" component={AllProgress} />
     </Switch>
     <Navigation />
+
   </BrowserRouter>
 );
 

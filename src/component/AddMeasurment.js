@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import addProgress from '../action/AddProgress';
 import Navigation from './footer';
+import Add from '../style/addMeasurment.module.css';
 
 const AddMeasurement = () => {
   const [prog, setProg] = useState({
@@ -32,15 +33,25 @@ const AddMeasurement = () => {
   const { id, result } = prog;
   return (
     <div>
-      <form>
-        <select name="id" id="cat" onChange={handleChange} value={id}>
+      <form className={Add.form}>
+        <select name="id" id="cat" onChange={handleChange} value={id} className={Add.select}>
           {category.map((cat, id) => (
             <option value={id + 1} key={cat}>{cat}</option>
           ))}
 
         </select>
-        <input name="result" type="number" step="0.1" min="0" max="100" onChange={handleChange} value={result} />
-        <button type="submit" onClick={createPost}>Add Measurment</button>
+        <input
+          name="result"
+          type="number"
+          step="0.1"
+          min="0"
+          max="100"
+          onChange={handleChange}
+          value={result}
+          className={Add.input}
+          placeholder="0.01CM"
+        />
+        <button type="submit" onClick={createPost} className={Add.button}>Add Measurment</button>
 
       </form>
       <Navigation />

@@ -11,6 +11,7 @@ const ProgressReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_PROGRESS_REQUEST:
       return {
+        ...state,
         isLoading: true,
         progress: [],
         error: '',
@@ -18,6 +19,7 @@ const ProgressReducer = (state = initialState, action) => {
       };
     case FETCH_PROGRESS_SUCCESS:
       return {
+        ...state,
         isLoading: false,
         progress: action.payload,
         error: '',
@@ -25,6 +27,7 @@ const ProgressReducer = (state = initialState, action) => {
       };
     case FETCH_PROGRESS_FAILURE:
       return {
+        ...state,
         isLoading: false,
         progress: [],
         error: action.payload,

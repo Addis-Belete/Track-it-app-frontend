@@ -7,7 +7,6 @@ import Progress from './Progress';
 import NavBar from './NavBar';
 import Panel from '../container/Panel';
 import AllProgress from './AllProgress';
-import Navigation from './footer';
 
 const Routes = () => (
   <BrowserRouter>
@@ -20,7 +19,6 @@ const Routes = () => (
       <Route exact path="/track" component={Panel} />
       <Route exact path="/allProgress" component={AllProgress} />
     </Switch>
-    <Navigation />
 
   </BrowserRouter>
 );

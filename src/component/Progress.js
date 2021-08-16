@@ -2,6 +2,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Navigation from './footer';
 
 const Progress = () => {
   const progress = useSelector((state) => state.progress.progress);
@@ -14,7 +15,7 @@ const Progress = () => {
           <p>{prog.created_at}</p>
         </div>
       ))}
-
+      <Navigation />
     </div>
   );
 };

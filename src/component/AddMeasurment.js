@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import addProgress from '../action/AddProgress';
+import Navigation from './footer';
 
 const AddMeasurement = () => {
   const [prog, setProg] = useState({
@@ -42,6 +43,7 @@ const AddMeasurement = () => {
         <button type="submit" onClick={createPost}>Add Measurment</button>
 
       </form>
+      <Navigation />
     </div>
   );
 };

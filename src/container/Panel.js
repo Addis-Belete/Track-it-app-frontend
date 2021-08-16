@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchProgress } from '../action/Progress';
+import Navigation from '../component/footer';
 
 const Panel = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const Panel = () => {
       <Link onClick={clickHandler(4)} to="/progress/4"><div>Waist</div></Link>
       <Link onClick={clickHandler(5)} to="/progress/5"><div>Left thigh</div></Link>
       <Link onClick={clickHandler(6)} to="/progress/6"><div>Right thigh</div></Link>
+      <Navigation />
     </div>
 
   );

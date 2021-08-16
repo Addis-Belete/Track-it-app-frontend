@@ -10,19 +10,18 @@ const Login = () => {
   const validateForm = () => {
     if (name.length > 2) {
       history.push('/track');
-    } else {
-      <p>Please Enter a Valid name</p>;
     }
   };
+  const disable = () => name.length > 2;
 
   return (
-    <form>
+    <div>
       <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} />
-      <button type="submit" onClick={validateForm}>
+      <button type="button" onClick={validateForm} disabled={!disable()}>
         Login
       </button>
 
-    </form>
+    </div>
 
   );
 };

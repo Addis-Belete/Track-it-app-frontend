@@ -6,7 +6,7 @@ const Navigation = (path) => {
     return '';
   }
   return (
-    <div>
+    <div className="footer">
 
       <Link to="/addMeasurment">Add</Link>
       <Link to="/track">Track</Link>

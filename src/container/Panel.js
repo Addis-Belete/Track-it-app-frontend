@@ -10,14 +10,14 @@ import panel from '../style/panel.module.css';
 
 const Panel = () => {
   const dispatch = useDispatch();
-  const category = ['Left bicep', 'Right bicep', 'Waist', 'Hips', 'Left thigh', 'Right thigh'];
+  const category = ['Left-bicep', 'Right-bicep', 'Waist', 'Hips', 'Left-thigh', 'Right-thigh'];
   return (
     <div>
       <div className={panel.panel}>
         {category.map((cat, ids) => (
           <div key={cat}>
 
-            <Link to={`progress/${ids + 1}`} onClick={() => dispatch(fetchProgress(ids + 1))} key={cat}><div className={panel.cat}>{cat}</div></Link>
+            <Link to={`progress/${cat}`} onClick={() => dispatch(fetchProgress(ids + 1))} key={cat}><div className={panel.cat}>{cat}</div></Link>
           </div>
         ))}
 

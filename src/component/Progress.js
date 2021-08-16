@@ -3,6 +3,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Navigation from './footer';
+import Prog from '../style/Progress.module.css';
 
 const Progress = () => {
   const progress = useSelector((state) => state.progress.progress);
@@ -13,7 +14,7 @@ const Progress = () => {
   return (
     <div>
       {progress.map((prog) => (
-        <div key={prog.id}>
+        <div key={prog.id} className={Prog.progress}>
           <p>{prog.result}</p>
           <p>{remove(prog.created_at)}</p>
         </div>

@@ -1,31 +1,30 @@
-.login{
-width: 80%;
-height: 50vw;
-
-margin-left: 10%;
-margin-top: 40%;
-border-radius: 2.5vw;
-display: flex;
-justify-content: center;
-flex-direction: column;
-background-color: #ADD8E6;
+.login {
+  width: 80%;
+  height: 50vw;
+  margin-left: 10%;
+  margin-top: 40%;
+  border-radius: 2.5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #add8e6;
 }
 
-input{
-margin-bottom: 2.5vw;
-padding: 2.5vw;
-width: 80%;
-margin-left: 6%;
-border: 0.25vw solid #ADD8E6;
-
+input {
+  margin-bottom: 2.5vw;
+  padding: 2.5vw;
+  width: 80%;
+  margin-left: 6%;
+  border: 0.25vw solid #add8e6;
 }
-button{
-padding: 2.5vw;
-width:50%;
-margin-left: 25%;
-background-color: #40B5E8;
-border: none;
-color:white;
-border-radius: 0.5vw;
-font-size: 4.25vw;
+
+button {
+  padding: 2.5vw;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #40b5e8;
+  border: none;
+  color: white;
+  border-radius: 0.5vw;
+  font-size: 4.25vw;
 }

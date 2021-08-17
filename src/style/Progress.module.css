@@ -1,15 +1,14 @@
-.progress{
-display: flex;
-justify-content: space-between;
-margin-bottom: 2.5vw;
-width: 100%;
-padding-left: 5% ;
-padding-right: 5%;
-box-sizing: border-box;
-background-color: white;
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5vw;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  background-color: white;
 }
 
-.progComp{
-margin-top: 20.75vw;
-
+.progComp {
+  margin-top: 20.75vw;
 }

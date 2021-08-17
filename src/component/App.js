@@ -1,5 +1,3 @@
-import '../style/App.css';
-
 import Navigation from './footer';
 
 function App() {

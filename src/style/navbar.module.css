@@ -11,4 +11,5 @@ box-sizing: border-box;
 padding-top: 7.5vw;
 color: white;
 font-size: 6.25vw;
+z-index: 1;
 }

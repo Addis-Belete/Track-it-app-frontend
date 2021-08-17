@@ -19,12 +19,12 @@ const displayImage = (id) => {
   }
   if (id === 2) {
     return (
-      <img src={waist} alt="waist" />
+      <img src={waist} alt="waist" className="hips" />
     );
   }
   if (id === 3) {
     return (
-      <img src={hips} alt="hips" />
+      <img src={hips} alt="hips" className="hips" />
     );
   }
   if (id === 4) {

@@ -20,7 +20,7 @@ const Panel = () => {
             <Link to={`progress/${cat}`} onClick={() => dispatch(fetchProgress(ids + 1))} key={cat}>
               <div className={panel.cat}>
                 {displayImage(ids)}
-                <p>
+                <p className="cat-title">
                   {' '}
                   {cat}
                   {' '}

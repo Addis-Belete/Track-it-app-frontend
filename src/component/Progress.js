@@ -9,10 +9,10 @@ const Progress = () => {
   const progress = useSelector((state) => state.progress.progress);
   const remove = (str) => {
     const newStr = `${str}`;
-    return newStr.slice(0, 9);
+    return newStr.slice(0, 10);
   };
   return (
-    <div>
+    <div className={Prog.progComp}>
       {progress.map((prog) => (
         <div key={prog.id} className={Prog.progress}>
           <p>{prog.result}</p>

@@ -17,7 +17,7 @@ const fetchProgressFailure = (error) => ({
 
 });
 
-const fetchProgress = (id) => (dispatch) => {
+const fetchProgress = (id = 1) => (dispatch) => {
   dispatch(fetchProgresRequest);
   axios.get(`https://intense-spire-98414.herokuapp.com/measurments/${id}/results`)
     .then((response) => {

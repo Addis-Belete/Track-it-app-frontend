@@ -21,4 +21,20 @@ describe('progress reducer', () => {
     };
     expect(ProgressReducer({}, requestAction)).toEqual({ isLoading: true, error: '', progress: [] });
   });
+  it('should handle FETCH_PROGRESS_SUCCESS', () => {
+    const progress = [1, 3, 4];
+    const successAction = {
+      type: FETCH_PROGRESS_SUCCESS,
+      payload: progress,
+    };
+    expect(ProgressReducer({}, successAction)).toEqual({
+      error: '',
+      isLoading: false,
+      progress: [
+        1,
+        3,
+        4,
+      ],
+    });
+  });
 });

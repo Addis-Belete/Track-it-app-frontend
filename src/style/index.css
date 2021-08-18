@@ -55,16 +55,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-	a{
-font-size:27px;
+  a {
+    font-size: 27px;
+  }
 
-}
-img{
-margin-top: 25px;
-width: 45px;
-height: 45px;
-}
-.cat-title{
-margin-top:25px;
-}
+  img {
+    margin-top: 25px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .cat-title {
+    margin-top: 25px;
+  }
 }

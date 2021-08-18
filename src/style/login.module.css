@@ -16,7 +16,7 @@ input {
   width: 80%;
   margin-left: 6%;
   border: 0.25vw solid #add8e6;
-font-size: 17px;
+  font-size: 17px;
 }
 
 button {
@@ -31,34 +31,32 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-	.login{
-width: 500px;
-margin-left: auto;
-margin-right: auto;
-height: 400px;
-margin-top: 250px;
+  .login {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    margin-top: 250px;
+  }
 
-}
+  button {
+    padding: 12px;
+    font-size: 25px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-button{
-padding: 12px;
-font-size: 25px;
-width: 200px;
-margin-left: auto;
-margin-right: auto;
-}
-::placeholder{
-font-size: 25px;
-opacity: 0.5;
-}
-.input{
-width: 320px;
-margin-left: auto;
-margin-right: auto;
-padding: 15px;
-font-size: 25px;
-}
+  ::placeholder {
+    font-size: 25px;
+    opacity: 0.5;
+  }
 
+  .input {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    font-size: 25px;
+  }
 }
-
-

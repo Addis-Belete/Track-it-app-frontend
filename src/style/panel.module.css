@@ -7,6 +7,7 @@
   margin-right: auto;
   grid-gap: 3vw;
   box-sizing: border-box;
+margin-bottom: 32vw;
 }
 
 .cat {
@@ -21,8 +22,22 @@
 @media screen and (min-width: 768px) {
   .panel {
     width: 70%;
+    margin-top: 15vw;
+    grid-gap: 1.5vw;
+margin-bottom: 0;
+  }
+
+  .cat {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+	  .panel {
+    width: 70%;
     margin-top: 13vw;
     grid-gap: 1.5vw;
+margin-bottom: 0;
   }
 
   .cat {

@@ -2,7 +2,7 @@
 
 # TRACK-APP
 
-> Track-App is an application designed to track results using back-end API. It posts and gets data for measurments like left-biceps, right-biceps, hips, waist, and thigh.
+> Track-App is an application designed to track results using back-end API. It posts and gets data for measurements like left-biceps, right-biceps, hips, waist, and thigh. It is fully responsive.
 
 ![screenshot](src/Assets/app1.png)
 ![screenshot](src/Assets/app2.png)

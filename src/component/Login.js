@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <div className={login.login}>
-      <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className={login.input} />
+      <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className={login.input} placeholder="Inter Your Name" />
       <button type="button" onClick={validateForm} disabled={!disable()} className={login.button}>
         Login
       </button>

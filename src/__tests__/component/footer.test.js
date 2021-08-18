@@ -26,6 +26,6 @@ describe('addMeasurment', () => {
         </Provider>,
 
       ),
-    );
+    ).toMatchSnapshot();
   });
 });

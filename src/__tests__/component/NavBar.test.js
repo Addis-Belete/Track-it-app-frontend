@@ -3,17 +3,18 @@ import { cleanup, render } from '@testing-library/react';
 
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Login from '../../component/Login';
+
 import store from '../../store/store';
 import '@testing-library/jest-dom';
+import NavBar from '../../component/NavBar';
 
 afterEach(cleanup);
 describe('addMeasurment', () => {
-  it('should render a Login page', () => {
+  it('should render form to add measurment', () => {
     const { asFragment } = render(
       <Provider store={store}>
         <BrowserRouter>
-          <Login />
+          <NavBar />
         </BrowserRouter>
 
       </Provider>,
@@ -22,7 +23,7 @@ describe('addMeasurment', () => {
     expect(
       asFragment(
         <Provider store={store}>
-          <Login />
+          <NavBar />
         </Provider>,
 
       ),

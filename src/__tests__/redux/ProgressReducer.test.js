@@ -1,5 +1,5 @@
 import ProgressReducer from '../../reducer/progressReducer';
-import { FETCH_PROGRESS_REQUEST, FETCH_PROGRESS_SUCCESS } from '../../store/type';
+import { FETCH_PROGRESS_FAILURE, FETCH_PROGRESS_REQUEST, FETCH_PROGRESS_SUCCESS } from '../../store/type';
 
 describe('progress reducer', () => {
   it('should return the initial state', () => {
@@ -35,6 +35,18 @@ describe('progress reducer', () => {
         3,
         4,
       ],
+    });
+  });
+  it('should handle FETCH_PROGRESS_FAILURE', () => {
+    const failureAction = {
+      type: FETCH_PROGRESS_FAILURE,
+      payload: 'yes',
+
+    };
+    expect(ProgressReducer({}, failureAction)).toEqual({
+      error: 'yes',
+      isLoading: false,
+      progress: [],
     });
   });
 });

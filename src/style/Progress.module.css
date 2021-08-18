@@ -12,3 +12,17 @@
 .progComp {
   margin-top: 20.75vw;
 }
+@media screen and (min-width: 768px) {
+.progress{
+margin-bottom: 25px;
+height: 120px;
+}
+.p{
+font-size: 35px;
+
+
+}
+.progComp{
+margin-top: 130px;
+}	
+}

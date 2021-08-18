@@ -15,8 +15,8 @@ const Progress = () => {
     <div className={Prog.progComp}>
       {progress.map((prog) => (
         <div key={prog.id} className={Prog.progress}>
-          <p>{prog.result}</p>
-          <p>{remove(prog.created_at)}</p>
+          <p className={Prog.p}>{prog.result}</p>
+          <p className={Prog.p}>{remove(prog.created_at)}</p>
         </div>
       ))}
       <Navigation />

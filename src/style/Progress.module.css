@@ -11,7 +11,7 @@
 
 .progComp {
   margin-top: 20.75vw;
-margin-bottom: 20vw;
+  margin-bottom: 20vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -26,6 +26,6 @@ margin-bottom: 20vw;
 
   .progComp {
     margin-top: 130px;
-margin-bottom: 150px;
+    margin-bottom: 150px;
   }
 }

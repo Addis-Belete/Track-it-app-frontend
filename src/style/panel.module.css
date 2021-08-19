@@ -22,13 +22,13 @@
 @media screen and (min-width: 768px) {
   .panel {
     width: 70%;
-    margin-top: 15vw;
+    margin-top: 20vw;
     grid-gap: 1.5vw;
-   
+  
   }
 
   .cat {
-    height: 70px;
+    height: 120px;
   }
 }
 

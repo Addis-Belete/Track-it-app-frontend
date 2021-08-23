@@ -12,13 +12,14 @@ const AddMeasurement = () => {
   });
   const dispatch = useDispatch();
 
-  const createPost = () => {
+  const createPost = (e) => {
     dispatch(addProgress(prog));
     setProg({
       id: '',
       result: '',
 
     });
+    e.preventDefault();
   };
   const handleChange = (e) => {
     const { name, value } = e.target;

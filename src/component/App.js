@@ -18,7 +18,6 @@ const App = () => (
       <Route exact path="/track" component={Panel} />
       <Route exact path="/Progress" component={Progress} />
     </Switch>
-
   </BrowserRouter>
 );
 

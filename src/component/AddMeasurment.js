@@ -1,6 +1,7 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import addProgress from '../action/AddProgress';
+import { addProgress } from '../action/Progress';
 import Navigation from './footer';
 import Add from '../style/addMeasurment.module.css';
 
@@ -13,12 +14,17 @@ const AddMeasurement = () => {
   const dispatch = useDispatch();
 
   const createPost = (e) => {
-    dispatch(addProgress(prog));
-    setProg({
-      id: '',
-      result: '',
+    if (prog.id === '' || prog.result === '') {
+      alert('Please add information');
+    } else {
+      dispatch(addProgress(prog));
+      setProg({
+        id: '',
+        result: '',
 
-    });
+      });
+      alert('Measurment successfully addedl');
+    }
     e.preventDefault();
   };
   const handleChange = (e) => {

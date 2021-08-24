@@ -3,7 +3,7 @@ import { cleanup, render } from '@testing-library/react';
 
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Routes from '../../component/Route';
+import Routes from '../../component/App';
 import store from '../../store/store';
 import '@testing-library/jest-dom';
 

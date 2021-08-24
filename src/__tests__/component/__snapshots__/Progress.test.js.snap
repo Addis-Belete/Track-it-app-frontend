@@ -8,10 +8,14 @@ exports[`addMeasurment should render form to add measurment 1`] = `
     <div
       class="progress"
     >
-      <p>
+      <p
+        class="p"
+      >
         20
       </p>
-      <p>
+      <p
+        class="p"
+      >
         undefined
       </p>
     </div>

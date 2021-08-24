@@ -8,6 +8,7 @@ exports[`addMeasurment should render a Login page 1`] = `
     <input
       class="input"
       id="name"
+      placeholder="Enter Your Name "
       type="text"
       value=""
     />

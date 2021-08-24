@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-alert */
 /* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -11,6 +12,8 @@ const Login = () => {
   const validateForm = () => {
     if (name.length > 2) {
       history.push('/track');
+    } if (name.length <= 2) {
+      alert('Please inter a valid user name');
     }
   };
   const disable = () => name.length > 2;
@@ -18,7 +21,7 @@ const Login = () => {
   return (
     <div className={login.login}>
       <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className={login.input} placeholder="Enter Your Name " />
-      <button type="button" onClick={validateForm} disabled={!disable()} className={login.button}>
+      <button type="button" onClick={validateForm} className={login.button}>
         Login
       </button>
 

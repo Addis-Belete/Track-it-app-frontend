@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-alert */
-/* eslint-disable consistent-return */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import login from '../style/login.module.css';
@@ -16,7 +14,6 @@ const Login = () => {
       alert('Please inter a valid user name');
     }
   };
-  const disable = () => name.length > 2;
 
   return (
     <div className={login.login}>

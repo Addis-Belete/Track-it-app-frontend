@@ -7,7 +7,7 @@ import Add from '../style/addMeasurment.module.css';
 
 const AddMeasurement = () => {
   const [prog, setProg] = useState({
-    id: '',
+    id: 1,
     result: '',
 
   });
@@ -19,7 +19,7 @@ const AddMeasurement = () => {
     } else {
       dispatch(addProgress(prog));
       setProg({
-        id: '',
+        id: 1,
         result: '',
 
       });

@@ -16,7 +16,7 @@
 ## Built With
 
 - Node.js
-- React
+- React JS
 - React-DOM
 - React-Create-App
 - Hook

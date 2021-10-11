@@ -21,7 +21,7 @@
 - React-Create-App
 - Hook
 - npm
-- CSS
+- CSS3
 - CSS module
 - ES6
 - Ruby On Rails Backend API ([API Rep](git@github.com:Addis0943/track-it-api.git))
